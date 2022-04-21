@@ -1,0 +1,103 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+table{
+    width: 90%;
+    height: auto;
+}
+td,th{
+    border: .5px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    padding: .25em .5em;
+}
+
+.table_edit_btn_placeholder, .table_delete_btn_placeholder{
+    transition: .3s;
+}
+
+.table_edit_btn_placeholder:hover{
+    background-color: rgb(157, 150, 150);
+    color: white;
+}
+.table_delete_btn_placeholder:hover{
+    background-color: rgb(209, 70, 70);
+    color: white;
+}
+
+.table_delete_btn_placeholder:active{
+    background-color: rgb(173, 59, 59);
+}
+.table_edit_btn_placeholder:active{
+    background-color: rgb(120, 115, 115);
+}
+.table_edit_input{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+.form{
+    width: 90%;
+    margin-top: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.add_person_form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5%;
+}
+.add_person_name_input,.add_person_phone_input{
+    border: .5px solid rgb(106, 106, 106);
+    box-sizing: border-box;
+    padding: .25em .5em;
+    border-radius: 5px;
+    margin-right: .5em;
+}
+.add_person_save_btn{
+    box-sizing: border-box;
+    padding: .25em 1.5em;
+    border-radius: 5px;
+    background-color: white;
+    border: .5px solid rgb(106, 106, 106);
+    transition: .3s;
+}
+.add_person_save_btn:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.error{
+    position: relative;
+}
+
+.error::placeholder{
+    color: rgb(226, 43, 43);
+}
+
+.error::after{
+    content: 'Неверный формат номера';
+    position: absolute;
+    top: 1em;
+    color: red;
+}   
+
+.add_person_error_span{
+    margin-right: .5em;
+    color: rgb(226, 43, 43);
+}
